@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Pad</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1><u>Signature Pad</u></h1>
+    <div class="pen-thickness">
+      <label for="penThickness"><b>Pen Thickness -></b></label>
+      <select id="penThickness">
+        <option value="2">2px</option>
+        <option value="4">4px</option>
+        <option value="6">6px</option>
+        <option value="8">8px</option>
+        <option value="10">10px</option>
+      </select>
+    </div>
+    <canvas id="signatureCanvas" width="1000" ; height="500" ;></canvas>
+    <div class="buttons">
+      <button id="clearButton">Clear</button>
+      <button id="downloadButton">Download</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

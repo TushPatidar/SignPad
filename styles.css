@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Sedan+SC&display=swap');
+
+body {
+  background: linear-gradient(135deg, rgb(249, 249, 249), rgb(200, 200, 200));
+  font-family: "Sedan SC", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+canvas {
+  border: 2.5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: crosshair;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: rgb(47, 79, 79);
+  font-size: 4.2vw;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  margin: 0 10px;
+  background-color: rgb(0, 123, 255);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button#clearButton,
+button#downloadButton {
+  font-family: "Kalam", cursive;
+}
+
+button:hover {
+  background-color: rgb(0, 86, 179);
+}
+
+.pen-thickness label,
+.buttons button {
+  font-size: 1vw;
+}
+
+.pen-thickness {
+  font-family: "Kalam", cursive;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4.2vw;
+  }
+
+  .pen-thickness label,
+  .buttons button {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  h1 {
+    font-size: 4.2vw;
+  }
+
+  .pen-thickness label,
+  .buttons button {
+    font-size: 1vw;
+  }
+}
