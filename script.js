@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let lastY = 0;
   let penThickness = 2;
 
-  // Adjust canvas size based on the container
   function resizeCanvas() {
     const container = document.querySelector(".container");
     canvas.width = container.clientWidth;
@@ -18,13 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", resizeCanvas);
   resizeCanvas();
 
-  // Mouse event listeners
   canvas.addEventListener("mousedown", startDrawing);
   canvas.addEventListener("mousemove", draw);
   canvas.addEventListener("mouseup", stopDrawing);
   canvas.addEventListener("mouseout", stopDrawing);
 
-  // Touch event listeners
   canvas.addEventListener("touchstart", startDrawingTouch);
   canvas.addEventListener("touchmove", drawTouch);
   canvas.addEventListener("touchend", stopDrawing);
@@ -58,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function startDrawingTouch(e) {
     isDrawing = true;
     [lastX, lastY] = [e.touches[0].clientX - canvas.offsetLeft, e.touches[0].clientY - canvas.offsetTop];
-    e.preventDefault(); // Prevent scrolling while drawing
+    e.preventDefault();
   }
 
   function drawTouch(e) {
@@ -73,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     context.stroke();
 
     [lastX, lastY] = [e.touches[0].clientX - canvas.offsetLeft, e.touches[0].clientY - canvas.offsetTop];
-    e.preventDefault(); // Prevent scrolling while drawing
+    e.preventDefault();
   }
 
   function stopDrawing() {
