@@ -43,6 +43,7 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 1.5vw;
 }
 
 button#clearButton,
@@ -54,8 +55,7 @@ button:hover {
   background-color: rgb(0, 86, 179);
 }
 
-.pen-thickness label,
-.buttons button {
+.pen-thickness label {
   font-size: 1vw;
 }
 
@@ -69,9 +69,12 @@ button:hover {
     font-size: 4.2vw;
   }
 
-  .pen-thickness label,
-  .buttons button {
+  .pen-thickness label {
     font-size: 1vw;
+  }
+
+  .buttons button {
+    font-size: 1.5vw;
   }
 }
 
@@ -80,8 +83,11 @@ button:hover {
     font-size: 4.2vw;
   }
 
-  .pen-thickness label,
-  .buttons button {
+  .pen-thickness label {
     font-size: 1vw;
+  }
+
+  .buttons button {
+    font-size: 1.5vw;
   }
 }
